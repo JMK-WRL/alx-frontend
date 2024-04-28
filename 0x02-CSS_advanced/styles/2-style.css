@@ -1,0 +1,39 @@
+/* Existing CSS code */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* Hide native scrollbar */
+    scroll-behavior: smooth;
+    /* Smooth scrolling behavior */
+}
+
+.container {
+    width: 100%;
+    /* Adjust as needed */
+    max-width: 1200px;
+    /* Adjust as needed */
+    margin: 0 auto;
+    /* Center the content */
+    padding: 0 20px;
+    /* Adjust as needed */
+    box-sizing: border-box;
+}
+
+/* Add any additional styling as needed */
+
+/* Additional styling */
+.visually-hidden {
+    display: none;
+}
+
+.card-category {
+    color: #D73953;
+}
+
+.section-tagline {
+    color: #D73953;
+}
