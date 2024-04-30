@@ -1,4 +1,4 @@
-/* Styling and custom properties for the nav */
+/*  Add quotes decoration on testimonials */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -681,9 +681,6 @@ ul.row {
     fill: var(--text-color);
 }
 
-
-/* Card Section */
-
 .card-category {
     color: var(--color-primary);
 }
@@ -714,17 +711,11 @@ ul.row {
     height: 10rem;
 }
 
-.card-testimonial .card-quote cite {
-    display: block;
-    padding-top: 1rem;
-    color: var(--color-primary);
-}
-
 .card-testimonial .card-quote {
     position: relative;
 }
 
-.card-testimonial .card-quote:before {
+.card-testimonial .card-quote::before {
     content: "\201C";
     position: absolute;
     top: -4.5rem;
@@ -732,6 +723,12 @@ ul.row {
     color: #efeded;
     font-size: 10rem;
     z-index: -1;
+}
+
+.card-testimonial .card-quote cite {
+    display: block;
+    padding-top: 1rem;
+    color: var(--color-primary);
 }
 
 .card-work .card-outer {
@@ -751,6 +748,7 @@ ul.row {
     top: -0.1rem;
     left: -0.1rem;
     right: -0.1rem;
+    bottom: -0.1rem;
     z-index: 1;
 }
 
@@ -773,12 +771,12 @@ ul.row {
 }
 
 .card-work .card-title a::after {
-    content: "";
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
+    content: "";
 }
 
 .card-work:hover .card-title {
